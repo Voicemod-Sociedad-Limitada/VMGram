@@ -1,0 +1,7 @@
+include ':VMGramAidl'
+include ':VMGramClient'
+include ':VMGramService'
+include ':TMessagesProj'
+include ':TMessagesProj_App'
+//include ':TMessagesProj_AppHuawei'
+//include ':TMessagesProj_AppHockeyApp'

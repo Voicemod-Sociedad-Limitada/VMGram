@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_change_voice"
+        android:icon="@drawable/ic_change_voice"
+        android:showAsAction="ifRoom"
+        android:title="@string/VoiceFilterMenuOption1" />
+    <item
+        android:id="@+id/item_voice_filter_off"
+        android:icon="@drawable/ic_voice_filter_off"
+        android:showAsAction="ifRoom"
+        android:title="@string/VoiceFilterMenuOption2" />
+    <item
+        android:id="@+id/item_voice_filter_on"
+        android:icon="@drawable/ic_voice_filter_outline"
+        android:showAsAction="ifRoom"
+        android:title="@string/MenuSelectVoice" />
+    <item
+        android:id="@+id/item_sound_effect"
+        android:icon="@drawable/ic_sound_effect_with_border"
+        android:showAsAction="ifRoom"
+        android:title="@string/VoiceFilterMenuOption3" />
+</menu>

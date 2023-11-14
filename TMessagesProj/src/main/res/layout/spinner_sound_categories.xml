@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <org.telegram.vm.ui.CustomSpinner
+            android:id="@+id/categories_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginHorizontal="12dp"
+            android:background="@drawable/rounded_corners_spinner"
+            android:dropDownWidth="match_parent"
+            android:popupBackground="@drawable/rounded_corners_spinner_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+plugins {
+    id 'com.android.library'
+}
+
+String rootDirName = project.rootDir.name
+if (rootDirName.startsWith('voicemod-telegram-android')) {
+    repositories {
+        mavenCentral()
+        google()
+    }
+}
+
+android {
+
+    buildFeatures.prefab = true
+
+    namespace 'net.voicemod.vmgramservice.client'
+    compileSdk 33
+    ndkVersion '25.2.9519653'
+
+    defaultConfig {
+        minSdk 30
+        targetSdk 33
+        consumerProguardFiles "consumer-rules.pro"
+        externalNativeBuild {
+            cmake {
+                arguments '-DANDROID_STL=c++_shared', '-DANDROID_TOOLCHAIN=clang'
+                if (project.hasProperty('VCMDAbisFilter') && project.properties['VCMDAbisFilter'] != null) {
+                    abiFilters (project.properties['VCMDAbisFilter'].split(','))
+                }
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        if (rootDirName.startsWith('voicemod-telegram-android')) {
+            beta {
+                minifyEnabled false
+            }
+            HA {
+                minifyEnabled true
+            }
+            standalone {
+                minifyEnabled true
+            }
+            release {
+                minifyEnabled true
+            }
+        }
+    }
+
+    packagingOptions {
+        exclude "**/libVMGramAidl.so"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    externalNativeBuild {
+        cmake {
+            path file('src/main/cpp/CMakeLists.txt')
+            version '3.22.1'
+        }
+    }
+
+    buildFeatures.prefabPublishing = true
+    prefab {
+        VMGramClient {
+            headers "src/main/cpp/net/voicemod/vmgramservice/include"
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.annotation:annotation:1.6.0'
+    api project(path: ':VMGramAidl')
+    implementation 'androidx.lifecycle:lifecycle-livedata-core:2.5.1'
+}

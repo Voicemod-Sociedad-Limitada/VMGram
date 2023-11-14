@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <org.telegram.vm.ui.SquareRelativeLayout
+            android:layout_width="match_parent"
+            tools:layout_width="100dp"
+            tools:layout_height="100dp"
+            android:layout_height="80dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="10dp"
+                android:id="@+id/sound_cardview"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/sound_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icplaceholder" />
+
+                <ImageView
+                    android:id="@+id/sound_gradient_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:src="@drawable/sound_gradient_top"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/sound_vm_logo"
+                    android:layout_marginEnd="6dp"
+                    android:src="@drawable/ic_voicemod_logo_white" />
+
+                <ProgressBar
+                    android:id="@+id/sound_progress"
+                    style="@style/VMCircularDeterminateProgressBar"
+                    android:layout_width="match_parent"
+                    android:padding="-12dp"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible"
+                    android:progressTint="@color/vm_black"
+                    android:layout_centerInParent="true" />
+
+                <FrameLayout
+                    android:id="@+id/sound_stop_btn"
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:src="@drawable/stop_button_box_rounded"/>
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <org.telegram.vm.ui.LineBarVisualizer
+                android:id="@+id/sound_visualizer"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="invisible" />
+
+            <ProgressBar
+                android:id="@+id/sound_loader"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:visibility="invisible"
+                android:indeterminateTint="@color/vm_white"
+                android:indeterminate="true"
+                android:layout_centerInParent="true" />
+
+        </org.telegram.vm.ui.SquareRelativeLayout>
+
+        <TextView
+            android:id="@+id/sound_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="1dp"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textColor="@color/vm_grey_charcoal"
+            android:textSize="12sp"
+            tools:text="Sound" />
+
+        <TextView
+            android:id="@+id/sound_author_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/vm_grey_chateau"
+            android:textSize="9sp"
+            tools:text="Tuna" />
+
+    </LinearLayout>
+
+</LinearLayout>

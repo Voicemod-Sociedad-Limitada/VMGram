@@ -1,0 +1,8 @@
+configurations.maybeCreate("default")
+afterEvaluate {
+    if (getGradle().getStartParameter().getTaskRequests().toString().contains("Debug")) {
+        artifacts.add("default", file('VMGramService-debug.aar'))
+    } else {
+        artifacts.add("default", file('VMGramService-release.aar'))
+    }
+}

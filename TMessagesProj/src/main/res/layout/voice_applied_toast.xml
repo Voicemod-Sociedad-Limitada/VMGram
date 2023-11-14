@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toast_linearlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingVertical="5dp"
+    android:paddingStart="10dp"
+    android:background="@drawable/vm_voice_applied_bkg"
+    android:paddingEnd="14dp">
+
+    <ImageView
+        android:id="@+id/toast_img"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="-6dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/voiceicon_8_bit" />
+
+    <TextView
+        android:id="@+id/toast_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/vm_green_900"
+        android:textSize="16sp"
+        tools:text="Voice applied" />
+
+</LinearLayout>

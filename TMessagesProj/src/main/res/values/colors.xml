@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="divider">#dcdcdc</color>
+    <color name="widget_name">#212121</color>
+    <color name="widget_badge">#ffffff</color>
+    <color name="widget_time">#96999C</color>
+    <color name="widget_text">#8B8D8F</color>
+    <color name="widget_divider">#d9d9d9</color>
+    <color name="widget_action_text">#8B8D8F</color>
+    <color name="widget_edit_text">#999999</color>
+    <!--VOICEMOD-->
+    <color name="vm_blue">#50A7EA</color>
+    <color name="vm_telegram_light_blue">#5EA7DE</color>
+    <color name="vm_telegram_aquamarine">#00DEE1</color>
+    <color name="vm_telegram_selected_dot_wh">#424B9B</color>
+    <color name="vm_telegram_not_selected_dot_wh">#DBDEFF</color>
+    <color name="vm_telegram_selected_dot_bl">#FFFFFF</color>
+    <color name="vm_telegram_not_selected_dot_bl">#915CFF</color>
+    <color name="vm_telegram_splash">#560EEE</color>
+    <color name="vm_green_900">#002F38</color>
+    <color name="vm_dark_grey">#868686</color>
+    <color name="vm_light_grey">#FBFBFB</color>
+    <color name="vm_grey">#6D6E71</color>
+    <color name="vm_white">#FFFFFF</color>
+    <color name="vm_white_50">#80FFFFFF</color>
+    <color name="vm_black">#000000</color>
+    <color name="vm_grey_athens">#F3F4F6</color>
+    <color name="vm_black_secondary">#1C1C1E</color>
+    <color name="vm_grey_charcoal">#484848</color>
+    <color name="vm_grey_chateau">#A1A7AF</color>
+    <color name="vm_grey_payne">#3C3C43</color>
+    <color name="vm_grey_mineshaft">#2F2F2F</color>
+    <color name="vm_grey_mercury">#E3E3E3</color>
+    <color name="vm_grey_manatee">#97A0A7</color>
+    <color name="vm_grey_stronghold">#E8E8E9</color>
+    <color name="vm_grey_dark_5">#9B9B9B</color>
+    <color name="vm_grey_7">#323437</color>
+    <color name="vm_violet">#50139F</color>
+    <color name="vm_applied_gray">#F6F6F6</color>
+    <!--END VOICEMOD-->
+
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/searchAndCategoriesSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/searchIcon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="9dp"
+            android:paddingBottom="16dp"
+            android:src="@drawable/ic_vm_search_sounds" />
+
+        <include
+            layout="@layout/spinner_sound_categories"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"></include>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/search_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/searchResultsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_corners_edittext"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:src="@drawable/ic_vm_search_sounds" />
+
+        <TextView
+            android:id="@+id/searchText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="8"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:textAlignment="gravity"
+            android:textColor="@color/vm_grey_payne"
+            tools:text="This is a search" />
+
+        <ImageView
+            android:id="@+id/cancelSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:src="@drawable/ic_vm_search_close" />
+
+    </LinearLayout>
+
+</FrameLayout>
+

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/voiceIconBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/circle_voice_icon_background" />
+
+
+            <ImageView
+                android:id="@+id/voiceIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/voiceicon_ai_dj" />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/voiceName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="8"
+            android:gravity="center|start"
+            android:paddingLeft="16dp"
+            android:text="Voice 0"
+            android:textColor="@color/vm_grey"
+            android:textSize="16sp"
+            tools:text="Voice name" />
+
+        <FrameLayout
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="18dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/previewVoiceBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_white"
+                    android:backgroundTint="@color/vm_grey_athens"
+                    android:padding="9dp" />
+
+                <ImageView
+                    android:id="@+id/previewVoiceIcon"
+                    android:layout_width="15dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/vm_demo_voice_skin"
+                    android:translationX="0.5dp" />
+
+            </FrameLayout>
+
+
+
+            <ProgressBar
+                android:id="@+id/previewVoiceProgress"
+                style="@style/VMCircularDeterminateProgressBarForSounds"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminate="true"
+                android:padding="-7dp"
+                android:progress="80"
+                android:progressTint="@color/vm_black"
+                android:indeterminateTint="@color/vm_black"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="76dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/appliedTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/Applied"
+                android:background="@drawable/rounded_applied_button"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/applyVoiceBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/vm_telegram_aquamarine"
+                android:text="@string/ApplyVoice"
+                android:textAllCaps="false"
+                android:stateListAnimator="@null"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <ProgressBar
+                android:id="@+id/applyVoiceProgress"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:indeterminateTint="@color/vm_white"
+                android:indeterminate="true"
+                android:layout_gravity="center"
+                android:elevation="3dp"
+                android:padding="4dp"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.05"
+        android:background="@android:color/darker_gray" />
+
+</LinearLayout>

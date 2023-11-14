@@ -1,0 +1,9 @@
+.idea/
+.gradle/
+build/
+obj/
+*.iml
+local.properties
+/TMessagesProj/.cxx/*
+/keystore.properties
+/keystore.jks

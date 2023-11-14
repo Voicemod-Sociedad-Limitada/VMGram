@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="11dp"
+    android:paddingRight="11dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:layout_width="66dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/vm_code_icon" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:text="@string/TelegramCodeTitle"
+        android:textColor="@color/vm_black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:text="@string/TelegramCodeSubtitle"
+        android:textColor="@color/vm_black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/ok_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/vm_ok_code_bkg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="@string/OK"
+        android:textColor="@color/vm_black"
+        android:textSize="17sp" />
+
+</LinearLayout>

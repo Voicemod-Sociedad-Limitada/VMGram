@@ -1,0 +1,8 @@
+/build
+/.cxx
+
+#/src/main/cpp/include/aidl/net/voicemod/vmgramservice/BnVMGramAidl.h
+#/src/main/cpp/include/aidl/net/voicemod/vmgramservice/BpVMGramAidl.h
+#/src/main/cpp/include/aidl/net/voicemod/vmgramservice/VMGramAidl.h
+
+#/src/main/cpp/net/voicemod/vmgramservice/VMGramAidl.cpp

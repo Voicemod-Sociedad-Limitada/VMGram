@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/vm_telegram_aquamarine"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="34dp">
+
+    <ImageView
+        android:paddingStart="8dp"
+        android:id="@+id/voiceIcon"
+        android:src="@drawable/voiceicon_magic_chords"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:paddingStart="4dp"
+        android:id="@+id/voiceText"
+        android:layout_width="0dp"
+        android:layout_weight="8"
+        android:textSize="14sp"
+        android:textColor="@color/vm_grey_7"
+        android:layout_gravity="center"
+        tools:text="Magic Chords Applied"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <ImageView
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/voiceMessageBlueNotificationCloseButton"
+        android:src="@drawable/ic_close_white"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
